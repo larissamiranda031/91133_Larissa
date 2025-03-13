@@ -1,0 +1,29 @@
+/*ex2 */
+label{
+    color: rgb(223, 152, 125);
+    font-weight: bold;
+}
+
+input{
+    width: 220px;
+    /*Bordas arredondadas*/
+    border-radius: 4px;
+}
+
+textarea{
+    width: 220px;
+    border-radius: 4px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    color: rgb(179, 113, 67);
+    background-color: rgb(26, 23, 23);
+}
+
+button:hover{
+    color: rgb(214, 235, 235);
+    background-color: rgb(245, 219, 186);
+    font-weight: bold;
+}

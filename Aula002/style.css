@@ -1,0 +1,27 @@
+/*Seletores CSS*/
+
+h1{
+    /*cetralizar os elementos*/
+    text-align: center;
+    /*cor de texto*/
+    color: burlywood;
+    /*cololar em negrito*/
+    font-weight: bold;
+}
+table{
+    /*largura de tabela*/
+    width: 100;
+    /*calcar de bordas*/
+    border: 1px solid;
+   
+}
+tr{
+    /*cetralizar os elementos*/
+    text-align:center;
+}
+
+thead{
+    /* */
+    background-color: aqua;
+    background-color:aliceblue;
+}
