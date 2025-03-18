@@ -11,48 +11,51 @@
 header{
     background-color: rgba(161, 245, 245, 0.877);
     margin: 15px;
-    padding: 30px;
+    padding: 18px;
 }
 
 ul li{
     /*Tira as bolinhas*/
     list-style: none;
     display: inline;
-    padding: 8px;
+    padding: 12px;
 
 }
 
-a{
-    /*Tira o sublinado*/
-    text-decoration: none;
-    color: rgb(94, 123, 179);
-    font-weight: bold;
-    font-size: 20pt;
-    cursor: pointer;
-    background-color: cadetblue;
-    padding: 30px;
-}
-
-a:hover{
-    color: rgb(113, 141, 196);
-    text-decoration: rgb(161, 245, 245,0.877);
-    padding: 120px;
-    transform: sms;
+@@ -41,36 +41,18 @@
 }
 
 section{
-    margin: 0px;
+    margin: 20px;
     background-color: cadetblue;
 
 }
-/*
+
 h2{
 background-color :  rgb(161, 245, 245,0.877);
+padding: 15px;
+margin-left: 30px;
+color: aqua;
+display: inline;
 }
+/*
 .about{
 background-color :  rgb(161, 245, 245,0.877);
 }
 */
 #font-type{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    padding: 15px;
+}
+
+footer div p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+} 
+
+.rodape{
+margin: 30px;;
+
 }
