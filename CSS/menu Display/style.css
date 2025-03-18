@@ -9,16 +9,16 @@
 }
 
 header{
-    background-color: rgba(169, 245, 245, 0.877);
-    margin: 50px;
-    padding: 30px;
+    background-color: rgba(161, 245, 245, 0.877);
+    margin: 15px;
+    padding: 18px;
 }
 
 ul li{
     /*Tira as bolinhas*/
     list-style: none;
     display: inline;
-    padding: 8px;
+    padding: 12px;
 
 }
 
@@ -27,17 +27,17 @@ a{
     text-decoration: none;
     color: rgb(94, 123, 179);
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 20pt;
     cursor: pointer;
-    background-color: rgb(158, 202, 204);
+    background-color: cadetblue;
     padding: 30px;
 }
 
 a:hover{
     color: rgb(113, 141, 196);
     text-decoration: rgb(161, 245, 245,0.877);
-    padding: 12px;
-    transform: 5ms;
+    padding: 120px;
+    transform: sms;
 }
 
 section{
@@ -49,7 +49,9 @@ section{
 h2{
 background-color :  rgb(161, 245, 245,0.877);
 padding: 15px;
-color: cadetblue;
+margin-left: 30px;
+color: aqua;
+display: inline;
 }
 /*
 .about{
@@ -57,25 +59,18 @@ background-color :  rgb(161, 245, 245,0.877);
 }
 */
 #font-type{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p{
-    padding: 10px;
-    text-align: justify;
+    padding: 15px;
 }
 
-footer{
-   margin: 30px;
+footer div p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 } 
 
 .rodape{
-    margin: 30px;
-    text-align: center;
+margin: 30px;;
 
-}
-
-html{
-    scroll-behavior: smooth;
-    transition: 5ms;
 }
