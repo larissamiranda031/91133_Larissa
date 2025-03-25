@@ -22,6 +22,24 @@ ul li{
 
 }
 
+a{
+    /*Tira o sublinado*/
+    text-decoration: none;
+    color: rgb(94, 123, 179);
+    font-weight: bold;
+    font-size: 20pt;
+    cursor: pointer;
+    background-color: cadetblue;
+    padding: 30px;
+}
+
+a:hover{
+    color: rgb(113, 141, 196);
+    text-decoration: rgb(161, 245, 245,0.877);
+    padding: 120px;
+    transform: sms;
+}
+
 section{
     margin: 20px;
     background-color: cadetblue;
