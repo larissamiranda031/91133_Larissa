@@ -1,0 +1,66 @@
+/*Zera as conf da pág*/
+*{  
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 18px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(60, 124, 103);
+    font-weight: bold;
+    font-size: 20pt;
+    cursor: pointer;
+    background-color: rgb(199, 228, 218);
+    padding: 30px;
+    display: inline-block;
+}
+
+a:hover {
+    color: rgb(57, 121, 100);
+    text-decoration: none;
+    padding: 35px;
+}
+
+section {
+    margin: 20px;
+    background-color: rgb(32, 65, 54);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h1 {
+    background-color: rgb(15, 44, 34);
+    padding: 15px;
+    margin-left: 30px;
+    color: rgb(59, 233, 175);
+    display: inline-block;
+}
+
+#font-type{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    padding: 15px;
+}
+
+footer div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rodape {
+    margin: 30px;
+}
