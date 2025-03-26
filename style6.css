@@ -25,27 +25,21 @@ a:hover{
     background-color: #08ebcc;
     padding: 40px;
 }
-.content {
+.content .box{
     text-align: center;
-}
-
-.row{
-    display: flex;
-}
-
-.box{
     background-color: aliceblue;
     height: 120px;
     width: 80vh;
     margin: 1.2vh;
 }
 
-.featured {
+.row{
     display: flex;
-    background-color: #333;
 }
 
-.box2 {
+.featured .box2{
+    display: flex;
+    background-color: #333;
     text-align: center;
     background-color: #08ebcc;
     height: 120px;
@@ -54,11 +48,8 @@ a:hover{
     justify-content: space-around;
 }
 
-.boxes {
+.boxes.box3{
     display: flex;
-}
-
-.box3{
     text-align: center;
     background-color: #333;
     height: 15px;
@@ -69,7 +60,13 @@ a:hover{
 .footer {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     padding: 8px;
+}
+
+@media(max-width: 768px){
+    .content .box,.featured .box2,.boxes .box3{
+        width: 80%;
+    }  
 }
