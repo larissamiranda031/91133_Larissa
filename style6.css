@@ -37,7 +37,7 @@ a:hover{
     display: flex;
 }
 
-.featured .box2{
+.featured .box{
     display: flex;
     background-color: #333;
     text-align: center;
@@ -48,7 +48,7 @@ a:hover{
     justify-content: space-around;
 }
 
-.boxes.box3{
+.boxes.box{
     display: flex;
     text-align: center;
     background-color: #333;
@@ -66,7 +66,8 @@ a:hover{
 }
 
 @media(max-width: 768px){
-    .content .box,.featured .box2,.boxes .box3{
+    .content .box,.featured .box,.boxes .box{
         width: 80%;
+        background-color: aquamarine;
     }  
 }
