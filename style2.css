@@ -1,36 +1,29 @@
-body{
- 
-     text-align: center;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- 
- }
- 
- section{
- 
-     width: 60%;
-     margin: 0 auto;
-     border-radius: 4px;
- 
- }
- 
- h1{
- 
-     font-size: 24px;
-     text-align: center;
- 
- }
- 
- form{
- 
-     margin-top: 20px;
-     border-radius: 4px;
- 
- }
- 
- input, select{
- 
-     border: 1px solid #ccc;
-     padding: 8px;
-     width: 100%;
-     margin-bottom: auto;
- }
+/*ex2 */
+label{
+    color: rgb(223, 152, 125);
+    font-weight: bold;
+}
+
+input{
+    width: 220px;
+    /*Bordas arredondadas*/
+    border-radius: 4px;
+}
+
+textarea{
+    width: 220px;
+    border-radius: 4px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    color: rgb(179, 113, 67);
+    background-color: rgb(26, 23, 23);
+}
+
+button:hover{
+    color: rgb(214, 235, 235);
+    background-color: rgb(245, 219, 186);
+    font-weight: bold;
+}
