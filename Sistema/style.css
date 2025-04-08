@@ -3,19 +3,45 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(183, 255, 231);
+    background-color: rgb(107, 207, 174);
+}
+.logo_icon imag{
+    width: 30px;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(113, 236, 195);
+    color: rgb(28, 71, 57);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
+
+}
+.rotulos{
+    background-color: #05c4a4; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
+    width: 260px;
+}
+
+input{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
+    width: 260px;  
 }
 
 .bt-submit {
+    background-color: rgb(60, 112, 95);
+    text-align: center;
+
 
 }
 
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(44, 92, 76);
-}
+
 
 
 form{
