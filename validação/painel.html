@@ -10,11 +10,12 @@
         <p id="userWelcome">Carregando....</p>
 
         <!--botão para sair-->
-        <button id="logooutBtn">Sair</button>
+        <button id="logoutBtn">Sair</button>
 
         <script>
             // Recupera o nome do usuário do localstorage 
             const username = localStorage.getItem("username");
+            
             // se o nome do usuario estiver armazenado 
             if(username){
                 document.getElementById("userWelcome").textContent = `Bem-Vindo, ${username}!`;
@@ -28,11 +29,9 @@
             // remove o nome de usuário do localstorage
             localStorage.removeItem("username");
 
-            //
-            window.location.href = "index.html";
-
-
-           })
+            //Redireciona o usuário de volta para a página de Login
+            window.location.href = "index.html";//Alterar para o caminho correto do seu login
+           });
         </script>
     </body>
 </html>        
