@@ -8,42 +8,59 @@ body, html {
     align-items: center;
     background-color: rgb(107, 207, 174);
 }
-.logo_icon imag{
+
+.logo_icon img { /* Corrigido para 'img' em vez de 'imag' */
     width: 30px;
 }
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(113, 236, 195);
     color: rgb(28, 71, 57);
     text-align: center;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
-
+    padding: 10px;
+    margin-bottom: 20px; /* Espaçamento inferior para separar o título do formulário */
 }
-.rotulos{
+
+.rotulos {
     background-color: #05c4a4; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
     width: 260px;
+    margin-bottom: 20px; /* Espaçamento entre os campos e o botão */
 }
 
-input{
-    padding: 20px;
+input {
+    padding: 10px; /* Ajustado o padding para 10px */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
-    width: 260px;  
+    width: 93%; /* Para ocupar toda a largura disponível dentro do formulário */
+    margin-bottom: 15px; /* Espaçamento entre os inputs */
 }
 
 .bt-submit {
     background-color: rgb(60, 112, 95);
     text-align: center;
-
-
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.705);
+    width: 100%; /* Para o botão ocupar toda a largura disponível */
+    cursor: pointer; /* Para indicar que o botão é clicável */
 }
 
+.bt-submit input {
+    background-color: inherit; /* Garantir que o fundo do botão seja o mesmo */
+    border: none; /* Remover a borda do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 16px; /* Ajustar o tamanho da fonte */
+    padding: 10px; /* Ajustar o padding do botão */
+    cursor: pointer; /* Apontar o cursor para indicar que é clicável */
+}
 
-
-
-form{
-    margin-right: 15px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

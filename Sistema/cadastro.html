@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="urf-8">
+    <meta name="viewpoirt" content="width=device-width,initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo_icon.png" alt="Logo Sistema" width="120px" >
+    <h1>Sistema CadProd -1.0</h1>
+    <form action="">   
+        <div class="rotulos">
+
+            <label for="">Produto</label>
+            <input type="text" name="produto" id="produto">
+           
+            <label for="">Preço</label>
+            <input type="text" name="preço" id="preço">
+
+            <label for="">Quantidade</label>
+            <input type="text" name="quantidade" id="quantidade">
+            
+            <label for="">Total</label>
+            <input type="text" name="total" id="total">
+        </div>
+        <div class="bt-submit">
+            <input type="submit" value="Entrar">
+        </div>
+    </form>    
+        
+    <button id="logoutBtn">Sair</button>
+
+    <script>
+        // Função para capturar o submit do formulário
+        document.getElementById("loginForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Obter os valores dos elementos do formulário
+            const produto = document.getElementById("produto").value;
+            const preço = document.getElementById("preço").value;
+            const quantidade = document.getElementById("quantidade").value;
+            const total = document.getElementById("total").value;
+
+            // Validação dos campos
+            if(!produto || !preço || !quantidade || !total) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            // Exemplo de validação do preço (não pode ser vazio ou negativo)
+            if(isNaN(preço) || parseFloat(preço) <= 0) {
+                alert("Por favor, insira um preço válido.");
+                return;
+            }
+
+            // Salva os dados no localStorage (se for necessário salvar no localStorage)
+            localStorage.setItem("produto", produto);
+            localStorage.setItem("preço", preço);
+            localStorage.setItem("quantidade", quantidade);
+            localStorage.setItem("total", total);
+
+            // Se a validação passar, redireciona para outra página
+            window.location.href = "painel.html"; // Abre uma nova página chamada "painel.html"
+            alert("Cadastro bem-sucedido!"); // Pop-up de sucesso
+        });
+    </script>
+</body>
+</html>  
