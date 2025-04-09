@@ -21,31 +21,7 @@
             <button type="submit">Entrar</button>
         </form>
     </div>
-    <script src="scrips.js"></script>
-</body>
-</html>    
-
-<script>
-    // Recupera o nome do usuário do localstorage 
-    const username = localStorage.getItem("username");
-    
-    // se o nome do usuario estiver armazenado 
-    if(username){
-        document.getElementById("userWelcome").textContent = `Bem-Vindo, ${username}!`;
-   } else {
-    document.getElementById("userWelcome").textContent = " Nome de usuário não encontrado";
-   }
-
-   //função para sair (destruir a sessão e voltar para o login)
-   document.getElementById(logoutBtn).addEventListener("click", function(){
-    
-    // remove o nome de usuário do localstorage
-    localStorage.removeItem("username");
-
-    //Redireciona o usuário de volta para a página de Login
-    window.location.href = "index.html";//Alterar para o caminho correto do seu login
-   });
-</script>
+    <script src="scrips.sis.js"></script>
 </body>
 </html>
             
