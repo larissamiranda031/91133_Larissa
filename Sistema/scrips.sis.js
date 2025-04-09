@@ -21,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     localStorage.setItem("username", username);
     
     // se a validação passar, abre o painel
-    window.location.href = "index.html";//abre uma nova pagina chamada
+    window.location.href = "cadastro.html";//abre uma nova pagina chamada
     alert("Login bem sucedido!");//pop-up de sucesso
     });
 
