@@ -6,10 +6,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     const password = document.getElementById("password").value;
     
     // validação dos campos
-    if(!username||!password){
-        alert("por favor, preencha todos os campos.");
-        return;
-    }
+    if(username){
+        document.getElementById("userWelcome").textContent = `Bem-Vindo, ${username}!`;
+   } else {
+    document.getElementById("userWelcome").textContent = " Nome de usuário não encontrado";
+   }
     
     if(password.length < 8){
         alert("A senha deve ter pelo menos 8 caractereres.");
@@ -20,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     localStorage.setItem("username", username);
     
     // se a validação passar, abre o painel
-    window.location.href = "painel.html";//abre uma nova pagina chamada
+    window.location.href = "index.html";//abre uma nova pagina chamada
     alert("Login bem sucedido!");//pop-up de sucesso
     });
 
