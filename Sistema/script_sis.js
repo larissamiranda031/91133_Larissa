@@ -1,26 +1,25 @@
-document.getElementById("loginForm").addEventListener("submit", function(event){
-    event.preventDefault(); //impede o envio do fomulario
-    
-    //obter o valor do elemento
+document.getElementById("loginForm").addEventListener("submit", 
+    function(event) {
+                        event.preventDefault(); 
+                        // Impede o envio do formulário
+
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    
-    // validação dos campos
-    if(username){
-        document.getElementById("userWelcome").textContent = `Bem-Vindo, ${username}!`;
-   } else {
-    document.getElementById("userWelcome").textContent = " Nome de usuário não encontrado";
-   }
-    
-    if(password.length < 8){
-        alert("A senha deve ter pelo menos 8 caractereres.");
+
+    // Validação dos campos
+    if (!username || !password) {
+        alert("Por favor, preencha todos os campos.");
         return;
     }
-    
-    //salva o nome do usuario no localStorage
+   
+    if (password.length < 8) {
+        alert("A senha deve ter pelo menos 8 caracteres.");
+        return;
+    }
+
+    // Salva o nome de usuário no localStorage
     localStorage.setItem("username", username);
-    
-    // se a validação passar, abre o painel
+    // Se a validação passar, abre o painel
     window.location.href = "cadastro.html";//abre uma nova pagina chamada
     alert("Login bem sucedido!");//pop-up de sucesso
     });
