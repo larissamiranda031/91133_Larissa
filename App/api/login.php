@@ -3,13 +3,13 @@
 session_start();
 include 'conexao.php';
 
-if($_SERVER['REQUEST_METHOD'] !== 'POST'){
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $usuario = trim($_POST['usuario']);
     $senha = trim($_POST['senha']);
 
     if(empty($usuario) || empty($senha)){
         echo"<script>
-    alert(\"preencha todos os campos\");
+    alert('preencha todos os campos');
     window.location.href = 'http://localhost:8081/app/index.html';
     </script>";
     
@@ -23,24 +23,21 @@ if($_SERVER['REQUEST_METHOD'] !== 'POST'){
     if($resultado->num_rows === 1){
     $_SESSION['usuario'] = $usuario;
     echo"<script>
-    alert(\"Login realizado com sucesso!\");
+    alert('Login realizado com sucesso!');
     window.location.href = 'http://localhost:8081/app/cad.html';
     </script>";
-}
-else {
+    }else{
     echo"<script>
-    alert(\"Usuário ou Senha incorreto!\");
+    alert('Usuário ou Senha incorreto!');
     window.location.href = 'http://localhost:8081/app';
     </script>";
-}
+    }
 
-$stmt->close();
-$conn->close();
-exit;
-
-} 
-else {
-    header("location: http://localhost:8081/app/index.html");
+    $stmt->close();
+    $conn->close();
+    exit;
+} else{
+    header('location: http://localhost:8081/app/index.html');
     exit;
 }
 
