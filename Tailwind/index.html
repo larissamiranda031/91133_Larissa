@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Soft-Florest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-gray-800">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <img class="h-8 w-auto" src="pet-logo.jpg" alt="Logo">
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="#sobre" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre Nós</a>
+                            <a href="#contato" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-4.586-4.586m0 0a2 2 0 112.828-2.828l4.586 4.586a2 2 0 01-2.828 2.828z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">Nossa História</h2>
+            Um dos primeiros obstáculos do nosso começo foi a necessidade de gerar renda enquanto tentava mantermos de pê.
+            Nós superamos isso de forma criativa.</section>
+        <section id="sobre" class="mb-12 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Nossa Equipe</h2>
+                <p class="text-gray-600">Somos uma equipe apaixonada por inovação e sustentabilidade, trabalhando juntos para criar soluções impactantes.</p>
+            </div>
+            <img src="equipe.jpg" alt="Nossa Equipe" class="rounded-lg shadow-lg">
+        </section>
+
+        <section id="parceiros" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">Parceiros</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow rounded-lg">
+                    <thead class="bg-indigo-600 text-white">
+                        <tr>
+                            <th class="py-3 px-6 text-left">Nome</th>
+                            <th class="py-3 px-6 text-left">Área</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-3 px-6">Parceiro AlphaLabs</td>
+                            <td class="py-3 px-6">Tecnologia</td>
+                        </tr>
+                        <tr class="border-b bg-gray-50">
+                            <td class="py-3 px-6">Parceiro  EcoMentes</td>
+                            <td class="py-3 px-6">Sustentabilidade</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            &copy; 2025 Meu Soft-Florest. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
